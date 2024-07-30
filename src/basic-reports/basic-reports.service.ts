@@ -45,7 +45,7 @@ export class BasicReportsService extends PrismaClient implements OnModuleInit {
     }
 
     const docDefinition = getEmploymentLetterByIdReport({
-      employerName: 'Fernando Herrera',
+      employerName: 'Antonio Espinoza',
       employerPosition: 'Gerente de RRHH',
       employeeName: employee.name,
       employeePosition: employee.position,
