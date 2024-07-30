@@ -15,7 +15,6 @@ const styles: StyleDictionary = {
   signature: {
     fontSize: 14,
     bold: true,
-    // alignment: 'left',
   },
   footer: {
     fontSize: 10,
