@@ -17,7 +17,7 @@ export class ExtraReportsService {
     const html = fs.readFileSync('src/reports/html/basic-03.html', 'utf8');
 
     const content = getHtmlContent(html, {
-      client: 'Fernando Herrera',
+      client: 'Antonio Espinoza',
       title: 'Curso de Node.js',
     });
 

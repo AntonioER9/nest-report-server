@@ -1,3 +1,4 @@
+// https://fonts.google.com/selection
 import { Injectable } from '@nestjs/common';
 import PdfPrinter from 'pdfmake';
 import {
@@ -23,7 +24,7 @@ const customTableLayouts: Record<string, CustomTableLayout> = {
       }
       return i === node.table.headerRows ? 2 : 1;
     },
-    vLineWidth: function (i) {
+    vLineWidth: function () {
       return 0;
     },
     hLineColor: function (i) {
@@ -44,6 +45,14 @@ const customTableLayouts: Record<string, CustomTableLayout> = {
       }
 
       return i % 2 === 0 ? '#f3f3f3' : null;
+    },
+  },
+  borderBlue: {
+    hLineColor: function () {
+      return '#5f96d4';
+    },
+    vLineColor: function () {
+      return '#5f96d4';
     },
   },
 };
